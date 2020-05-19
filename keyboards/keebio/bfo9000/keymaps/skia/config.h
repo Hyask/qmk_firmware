@@ -39,5 +39,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
  #define PREVENT_STUCK_MODIFIERS
 
+#define JOYSTICK_BUTTON_COUNT 16
+#define JOYSTICK_AXES_COUNT 3
+
 
 #endif

@@ -28,8 +28,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DESCRIPTION     Fully functional joystick
 
 /* key matrix size */
-#define MATRIX_ROWS 1
-#define MATRIX_COLS 1
+#define MATRIX_ROWS 3
+#define MATRIX_COLS 2
 
 #define DIODE_DIRECTION COL2ROW
 
@@ -39,8 +39,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_TERM 500
 
 
-#define MATRIX_COL_PINS { F4 }
-#define MATRIX_ROW_PINS { F5 }
+#define MATRIX_COL_PINS { D2, D3 }
+#define MATRIX_ROW_PINS { D1, D0, D4 }
 #define UNUSED_PINS
 
 #define BACKLIGHT_PIN B6

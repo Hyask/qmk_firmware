@@ -7,21 +7,17 @@
 #endif
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-  LAYOUT( JS_BUTTON0 )
+//      | First Joystick | Second Joystick |
+  LAYOUT( JS_BUTTON0,      JS_BUTTON3,
+          JS_BUTTON1,      JS_BUTTON4,
+          JS_BUTTON2,      JS_BUTTON5
+          )
 };
 
-/*
-void matrix_scan_user() {
-  int16_t val = (((uint32_t)timer_read()%5000 - 2500) * 255) / 5000;
-  if (val != joystick_status.axes[1]) {
-    joystick_status.axes[1] = val;
-    joystick_status.status |= JS_UPDATED;
-  }
-}
-*/
 
 //joystick config
 joystick_config_t joystick_axes[JOYSTICK_AXES_COUNT] = {
-    [0] = JOYSTICK_AXIS_IN(D4, 0, 512, 1023),
-    [1] = JOYSTICK_AXIS_IN(F6, 0, 512, 1023)
+    [0] = JOYSTICK_AXIS_IN(F7, 140, 515, 835), // X
+    [1] = JOYSTICK_AXIS_IN(F6, 880, 575, 100), // Y
+    [2] = JOYSTICK_AXIS_IN(F5, 350, 520, 700)  // Z
 };
